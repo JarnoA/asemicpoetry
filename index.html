@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asemic Poetry</title>
+<meta name="description" content="Asemic poetry by Kirsi-Marja Moberg – letterpress prints, mixed-media works, wall paintings and installations.">
+<link rel="icon" href="images/cropped-pilkku.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+<style>
+  /* Colours and fonts from the original WordPress theme */
+  :root { --base: #EBEBEF; --base-2: #DCE0E6; --contrast: #1C2930; --contrast-3: #96A5B2; --pad: clamp(1.25rem, 4vw, 3rem); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--base); color: var(--contrast); font: 400 1rem/1.6 Arvo, serif; }
+  img, video { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  h2 { font: 700 clamp(1.6rem, 3vw, 2.2rem)/1.4 Montserrat, sans-serif; margin: 0 0 .75rem; }
+
+  .topbar { background: #000; color: #fff; display: flex; align-items: center; gap: .75rem; padding: .9rem var(--pad); }
+  .topbar img { width: 34px; height: 34px; }
+  .topbar a { font: 700 1rem Montserrat, sans-serif; text-decoration: none; }
+
+  .cover { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 3rem var(--pad); }
+  .cover video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .cover::after { content: ""; position: absolute; inset: 0; background: rgba(255,255,255,.1); }
+  .cover img { position: relative; z-index: 1; width: 824px; }
+
+  .intro { max-width: 760px; margin: 0 auto; padding: 2rem var(--pad) 3rem; text-align: center; }
+  .intro p { font-size: clamp(1.05rem, 1.6vw, 1.25rem); margin: 0 0 1rem; }
+  .intro .sign { font-style: italic; }
+
+  .wide { max-width: 1340px; margin: 0 auto; padding: 0 var(--pad); }
+  .media-text { display: grid; grid-template-columns: 1fr 1fr; align-items: center; background: var(--base-2); }
+  .media-text.right figure { order: 2; }
+  .media-text figure { margin: 0; height: 100%; }
+  .media-text figure img { width: 100%; height: 100%; object-fit: cover; }
+  .media-text .text { padding: 2em; font-size: clamp(15.7px, 0.984rem + ((1vw - 3.2px) * 0.86), 24px); line-height: 1.2; }
+  .media-text .text p { margin: 0 0 1em; }
+  .media-text .text p:last-child { margin: 0; }
+
+  .gap { height: 66px; }
+  .feature { padding: 4vw; }
+  .feature img { width: 100%; }
+  figcaption { font-size: .8rem; text-align: center; margin-top: .5rem; }
+  .columns { display: grid; grid-template-columns: 1fr 1fr; gap: 2em; }
+  .columns img { width: 100%; }
+
+  .prints { padding: 4vw; }
+  .prints figure { width: min(900px, 100%); margin: 0 auto 44px; }
+  .prints img { margin: 0 auto; }
+
+  .artist { position: relative; color: #fff; padding: 5vw; min-height: 520px; display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 2rem;
+            background: #1C2930 url(images/K-M-Moberg-DSC_3872netti_bw.jpg) center / cover; }
+  .artist::before { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,.45); }
+  .artist > * { position: relative; }
+  .artist .about p { font: 300 clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.313), 17px)/1.4 Arvo, serif; margin: 0 0 1em; max-width: 420px; }
+  .artist .btn { display: inline-block; background: #000; color: #fff; text-decoration: none; padding: .8em 1.6em; font: 700 .85rem Montserrat, sans-serif; letter-spacing: .05em; margin-top: .5em; }
+  .artist .big { text-align: right; font-family: Montserrat, sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: -4px; line-height: .8; }
+  .artist .big .a { color: var(--contrast-3); font-size: clamp(44.96px, 2.81rem + ((1vw - 3.2px) * 4.379), 87px); margin: 0 0 .1em; }
+  .artist .big .b { color: #fff; font-size: clamp(32px, 2.004rem + ((1vw - 3.2px) * 2.598), 57px); margin: 0; }
+
+  footer { background: #000; color: #fff; text-align: center; padding: 2.5rem var(--pad); font-size: 14px; }
+  footer img { width: 40px; height: 40px; margin: 0 auto 1rem; }
+
+  @media (max-width: 781px) {
+    .media-text, .columns, .artist { grid-template-columns: 1fr; }
+    .media-text.right figure { order: 0; }
+    .artist .big { text-align: left; letter-spacing: -2px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <img src="images/cropped-pilkku.png" alt="">
+  <a href="/">Asemic Poetry</a>
+</div>
+
+<div class="cover">
+  <video autoplay muted loop playsinline src="images/asemicloop2.mp4"></video>
+  <img src="images/asemic_site.png" alt="">
+</div>
+
+<div class="intro">
+  <h2>Asemic Poetry</h2>
+  <p>“Asemic writing is a form of wordless writing, a visual variation of marks resembling text, where the creator combines expressions of visual art, conceptual art, and literature.</p>
+  <p>Through asemic poetry, I explore the unspeakable. How the meanings of text not based on rationality are conveyed through rhythm, movement and space, as well as what emotions it evokes. I investigate this by working with letterpress, as well as painting and creating works from selected materials using mixed media techniques”</p>
+  <p class="sign">Kirsi-Marja Moberg</p>
+</div>
+
+<div class="wide">
+
+  <div class="media-text right">
+    <div class="text"><p>“In mixed-media works, I play with light and reflection. The surface of the pieces appears like a holographic image that transforms when viewed from different angles. It’s as if they are smoke signals that change according to the viewer’s own movement. Additionally, in these works, I also explore asemic writing through natural materials. In one reflective piece, the asemic writing is constructed from tree branches.“</p></div>
+    <figure><img src="images/photo_2024-08-31_22-59-47-576x1024.jpg" alt=""></figure>
+  </div>
+
+  <div class="feature">
+    <figure style="margin:0"><img src="images/2024-12-16-11.50.44-1014x1024.jpg" alt="" loading="lazy" style="max-width:820px"><figcaption style="text-align:left">Lost / Found – asemic artworks, Kotka Art Biennale, 2024.</figcaption></figure>
+  </div>
+
+  <div class="media-text">
+    <figure><img src="images/20250703_155851-1-1024x576.jpg" alt="" loading="lazy"></figure>
+    <div class="text"><p>“My work also extends to wall paintings and installations. I created a wall painting in one of the rooms at the Outomaa demolition house exhibition in Kotka, in 2025.<br>I wanted to evoke the impression of walking inside asemic writing.“</p></div>
+  </div>
+  <div class="gap"></div>
+  <div class="columns">
+    <img src="images/3.-K-M-Moberg-1-1024x576.jpg" alt="" loading="lazy">
+    <img src="images/6.-K-M-Moberg-1024x576.jpg" alt="" loading="lazy">
+  </div>
+  <div class="gap"></div>
+  <div class="gap"></div>
+
+  <div class="media-text">
+    <figure><img src="images/photo_2025-08-30_18-44-00-768x1024.jpg" alt="" loading="lazy"></figure>
+    <div class="text"><p>“Next Level Street Art Oy commissioned me to paint three electrical boxes in Tampere in the summer of 2025, in collaboration with the City of Tampere and Tampere Energy.“</p></div>
+  </div>
+  <div class="gap"></div>
+  <div class="columns">
+    <img src="images/photo_2025-08-30_18-44-10-768x1024.jpg" alt="" loading="lazy">
+    <img src="images/photo_2025-09-21_20-19-58-818x1024.jpg" alt="" loading="lazy">
+  </div>
+  <div class="gap"></div>
+  <div class="gap"></div>
+
+  <div class="media-text">
+    <figure><img src="images/Moberg_Nimeton_Aseeminen-runo-1_2024-1024x709.jpg" alt="" loading="lazy"></figure>
+    <div class="text">
+      <p>“The letterpress prints I have made using old printing presses and punctuation marks from recycled typesets. I am fascinated by the sequences of punctuation marks, resembling a kind of code. The rhythm and size of the type create a composition on paper that imitates text but communicates through non-semantic meanings.<br>I call my works asemic poems, but I want to leave it up to the viewer to interpret what the works represent, communicate, or achieve.“</p>
+    </div>
+  </div>
+
+  <div class="prints">
+    <div class="gap"></div>
+    <figure><img src="images/DOC240224-240224-012.png" alt="" loading="lazy"><figcaption>Letterpress print, 2024.</figcaption></figure>
+    <figure><img src="images/DOC240224-240224-007.png" alt="" loading="lazy"><figcaption>Letterpress print, 2024.</figcaption></figure>
+    <figure><img src="images/photo_2024-08-31_22-59-59_1-1-rotated-1.jpg" alt="" loading="lazy"><figcaption>Letterpress print, 2024.</figcaption></figure>
+    <figure><img src="images/Moberg-Nimeton-aseeminen-runo-2-2024_1.jpg" alt="" loading="lazy"><figcaption>Letterpress print, 2024.</figcaption></figure>
+    <figure><img src="images/DOC240224-240224-003-2.png" alt="" loading="lazy"><figcaption>Letterpress print, 2024.</figcaption></figure>
+    <figure><img src="images/photo_2024-09-23_14-18-06_nettiin.jpg" alt="" loading="lazy"><figcaption>Asemic prints, Gadrioru Galerii, Tallin, 2024.</figcaption></figure>
+    <figure><img src="images/photo_2024-08-31_22-59-33-1-576x1024.jpg" alt="" loading="lazy"><figcaption>Lost / Found – asemic artworks, Kotka Art Biennale, 2024.</figcaption></figure>
+  </div>
+
+</div>
+
+<div class="artist">
+  <div class="about">
+    <p><strong>Kirsi-Marja Moberg (M.A.)</strong> works extensively in the fields of visual art and poetry. In her asemic mixed-media and letterpress works, she combines visual art and poetry through the lens of emotions. In recent years, Moberg has participated in several professional exhibitions and collaborative art projects.</p>
+    <p>Her works were showcased in 2024 at Estonian Painters’ Association gallery Gadrioru Galerii in Tallinn and at Gallery Uusikuva during the Kotka Art Biennial.</p>
+    <p>Contact: <a href="mailto:kirsimarja.moberg@gmail.com">kirsimarja.moberg@gmail.com</a></p>
+    <a class="btn" href="http://artistmoberg.com">ARTISTMOBERG.COM</a>
+  </div>
+  <div class="big">
+    <p class="a">Artist behind of Asemic Poetry:</p>
+    <p class="b">Kirsi-Marja Moberg</p>
+  </div>
+</div>
+
+<footer>
+  <img src="images/cropped-pilkku.png" alt="">
+  <div>© Kirsi-Marja Moberg · Asemic Poetry</div>
+</footer>
+
+</body>
+</html>
